@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1b7695, #1d7b2e); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; 
+}
+
+.container {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.app-title {
+    font-size: 32px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #0ca678, #099f6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; 
+    margin-bottom: 20px;
+}
+
+#searchBox {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchBox input {
+    width: 100%; 
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+}
+
+#searchBox i {
+    background-color: #0ca678;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchBox i:hover {
+    background-color: #099f6c;
+}
+
+#weatherData img {
+    margin-top: 20px;
+    max-width: 100%; 
+    height: auto;
+}
+
+#weatherData h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#weatherData p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#weatherData .temp {
+    font-size: 48px;
+    font-weight: 600;
+    color: #0ca678;
+}
+
+#icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#icon p {
+    font-size: 18px;
+    color: #333;
+}
+
+#icon i {
+    font-size: 24px;
+    margin-right: 8px;
+    color: #0ca678;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 600px) {
+    .app-title {
+        font-size: 24px; 
+    }
+
+    #searchBox {
+        gap: 8px;
+    }
+
+    #searchBox input {
+        width: 100%;
+    }
+
+    #searchBox i {
+        width: 100%;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    #weatherData h1 {
+        font-size: 24px;
+    }
+
+    #weatherData p {
+        font-size: 18px;
+    }
+
+    #weatherData .temp {
+        font-size: 36px;
+    }
+
+    #icon p {
+        font-size: 16px;
+    }
+
+    #icon i {
+        font-size: 20px;
+    }
+}
