@@ -8,7 +8,7 @@ function weather() {
         .then(res => {
             console.log(res);
             weatherData.innerHTML = `
-                <img width="130px" src="https://cdn-icons-png.freepik.com/512/6328/6328184.png?ga=GA1.1.1707945695.1719511734" alt="Weather Icon">
+                <img width="130px" src="${res.current.condition.icon}" alt="Weather Icon">
                 <p class="temp">${res.current.temp_c}°C</p>
                 <h1>${res.location.name}</h1>
                 <p>${res.current.condition.text}</p>
